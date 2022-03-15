@@ -1,7 +1,19 @@
 import { defineConfig } from 'vite'
+const { resolve } = require('path')
 import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()]
+  plugins: [vue()],
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        gallery: resolve(__dirname, 'gallery/index.html'),
+        faculty: resolve(__dirname, 'faculty/index.html'),
+        teams: resolve(__dirname, 'teams/index.html'),
+        comics: resolve(__dirname, 'comics/index.html'),
+      }
+    }
+  }
 })
