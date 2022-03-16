@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "vue": "^3.2.25",
-    "vue-scrollto": "^2.20.0"
+    "vue-scrollto": "^2.20.0",
+    "vue3-carousel": "^0.1.36"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.2.0",
