@@ -1,6 +1,5 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import App from './Pages/App.vue'
 import './index.css'
-import VueScrollTo from 'vue-scrollto'
 
-createApp(App).use(VueScrollTo).mount('#app')
+createApp(App).mount('#app')
