@@ -6,8 +6,8 @@
 		</a>
 		<ul class="lg:flex hidden gap-6">
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/gallery/">Gallery</a></li>
-			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="">Faculty Blogs</a></li>
-			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="">Teams</a></li>
+			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/faculty/">Faculty Blogs</a></li>
+			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/students/">Student Blogs</a></li>
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="">Comic Strips</a></li>
 		</ul>
 		<div class="block lg:hidden" @click="overflow = true">
@@ -29,8 +29,8 @@
 			</button>
 			<ul class="flex flex-col gap-12 text-black">
 				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/gallery/">Gallery</a></li>
-				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="">Faculty Blogs</a></li>
-				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="">Teams</a></li>
+				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/faculty/">Faculty Blogs</a></li>
+				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/students/">Student Blogs</a></li>
 				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="">Comic Strips</a></li>
 			</ul>
 		</div>

@@ -11,7 +11,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         gallery: resolve(__dirname, 'gallery/index.html'),
         faculty: resolve(__dirname, 'faculty/index.html'),
-        teams: resolve(__dirname, 'teams/index.html'),
+        students: resolve(__dirname, 'students/index.html'),
         comics: resolve(__dirname, 'comics/index.html'),
       }
     }
