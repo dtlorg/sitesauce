@@ -66,6 +66,15 @@ import BlogPage from '../components/BlogPage.vue';
 				</div>
 			</div>
 		</div>
+
+		<div class="flex flex-col gap-6">
+			<div class="flex justify-between">
+				<h1 class="font-bold text-2xl">Comic Strips</h1>
+				<h1 class="text-blue-600 hover:underline transition ease-in-out duration-300"><a href="/comics/">See all</a></h1>
+			</div>
+			<div class="w-full h-52 bg-black/10 rounded-xl">
+			</div>
+		</div>
 	</div>
 
 	<Footer/>

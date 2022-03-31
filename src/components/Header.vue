@@ -7,7 +7,7 @@
 		<ul class="lg:flex hidden gap-6">
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/gallery/">Gallery</a></li>
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/blogs/">Blogs</a></li>
-			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="">Comic Strips</a></li>
+			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/comics/">Comic Strips</a></li>
 		</ul>
 		<div class="block lg:hidden" @click="overflow = true">
 			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" v-if="overflow">
@@ -29,7 +29,7 @@
 			<ul class="flex flex-col gap-12 text-black">
 				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/gallery/">Gallery</a></li>
 				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/blogs/">Blogs</a></li>
-				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="">Comic Strips</a></li>
+				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/comics/">Comic Strips</a></li>
 			</ul>
 		</div>
 	</div>
