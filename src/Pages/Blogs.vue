@@ -32,14 +32,14 @@ import BlogPage from '../components/BlogPage.vue';
 					<path d="M21 11H6.83L10.41 7.41L9 6L3 12L9 18L10.41 16.58L6.83 13H21V11Z" fill="black"/>
 				</svg>
 			</span>
-			FACULTY BLOGS
+			BLOGS
 		</a>
 	</header>
 
 	<BlogPage v-if="tblog"/>
 
 	<div class="flex flex-col gap-12 m-6 lg:mx-60 lg:my-8" v-else>
-		<h1 class="text-xl font-bold">Blogs by Faculty</h1>
+		<h1 class="text-xl font-bold">Blogs</h1>
 
 		<div class="grid grid-cols-1 lg:grid-cols-3 auto-rows-auto gap-6">
 			<div v-for="i in 9" :key="i">
@@ -74,7 +74,7 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-#faculty {
+#blogs {
 	font-family: 'Montserrat', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
