@@ -8,10 +8,6 @@
 	</footer>
 </template>
 
-<script setup>
-import Social from './Social.vue'
-</script>
-
 <style>
 footer {
 	background: white;
