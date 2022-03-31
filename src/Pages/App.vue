@@ -24,10 +24,26 @@ import Footer from '../components/Footer.vue';
 			<h2 class="text-2xl">The course website landing page</h2>
 		</div>
 
-		<div class="grid grid-cols-2 lg:grid-cols-3 auto-rows-auto gap-6">
-			<div v-for="i in 5" :key="i">
-				<div class="flex justify-start items-end bg-black/5 h-64 rounded-xl hover:scale-90 transition-transform cursor-pointer">
-				<span class="ml-6 mb-6 font-bold">Title {{ i }}</span>
+		<div class="flex flex-col gap-6">
+			<div class="flex justify-between">
+				<h1 class="font-bold text-2xl">Blogs</h1>
+				<h1 class="text-blue-600 hover:underline transition ease-in-out duration-300 cursor-pointer">See all</h1>
+			</div>
+			<div class="grid grid-cols-2 lg:grid-cols-3 auto-rows-auto gap-6">
+				<div v-for="i in 3" :key="i">
+					<div class="flex flex-col justify-between bg-black/5 h-64 rounded-xl">
+						<div class="bg-black/10 p-6 rounded-t-xl">
+							Date {{ i }}
+						</div>
+						<div class="p-6">
+							<button
+								type="button"
+								class="bg-indigo-600 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg hover:scale-90 transition-transform cursor-pointer"
+								@click="tblog = true">
+								Read More
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
