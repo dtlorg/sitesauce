@@ -93,7 +93,10 @@ export default {
 			var searchString = search.trim().toLocaleLowerCase()
 
 			prs = prs.filter(function(item) {
-				if(item.team.toLocaleLowerCase().indexOf(searchString) !== -1) {
+				if(item.team.toLocaleLowerCase().indexOf(searchString) !== -1
+					|| item.mentor.toLocaleLowerCase().indexOf(searchString) !== -1
+					|| item.project.toLocaleLowerCase().indexOf(searchString) !== -1
+					|| item.desc.toLocaleLowerCase().indexOf(searchString) !== -1) {
 					return item;
 				}
 			})
