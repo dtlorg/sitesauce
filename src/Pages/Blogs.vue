@@ -4,7 +4,7 @@ import BlogPage from '../components/BlogPage.vue';
 </script>
 
 <template>
-	<header class="flex justify-between items-center px-8 py-5 z-40 sticky -top-0 border-white border-b-2" :class="{'backdrop-filter backdrop-blur': !overflow, 'fixed w-screen': overflow}">
+	<header class="flex justify-between items-center px-8 py-5 z-40 sticky -top-0 border-white border-b-2 backdrop-filter backdrop-blur">
 		<div class="font-bold flex gap-4 cursor-pointer" v-if="tblog" @click="tblog = false">
 			<!-- <img src="../assets/enigma.svg" class="lg:w-auto w-6 select-none" /> -->
 			<span>
