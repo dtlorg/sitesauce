@@ -5,7 +5,7 @@
 			CREATIVE SCIENCES.
 		</a>
 		<ul class="lg:flex hidden gap-6">
-			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/gallery/">Gallery</a></li>
+			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/gallery/">Projects</a></li>
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/blogs/">Blogs</a></li>
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/comics/">Comic Strips</a></li>
 		</ul>
@@ -28,7 +28,7 @@
 				</svg>
 			</button>
 			<ul class="flex flex-col gap-12 text-black">
-				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/gallery/">Gallery</a></li>
+				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/gallery/">Projects</a></li>
 				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/blogs/">Blogs</a></li>
 				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/comics/">Comic Strips</a></li>
 			</ul>
