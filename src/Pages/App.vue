@@ -11,7 +11,7 @@ import ProjectPage from '../components/ProjectPage.vue';
 <template>
 	<ProjectPage v-if="project" :pproject="pproject" :pteam="pteam" :plink="plink" :pmentor="pmentor" :pdesc="pdesc" />
 	<BlogPage v-else-if="tblog"/>
-	<div v-else>
+	<div class="flex flex-col" v-else>
 		<Header />
 
 		<div class="flex flex-col gap-12 mx-6 lg:mx-60 my-8">
