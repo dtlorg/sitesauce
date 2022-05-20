@@ -31,6 +31,7 @@
 				<li class="bg-white shadow-lg p-4 rounded-lg w-full text-center"><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/gallery/">Projects</a></li>
 				<li class="bg-white shadow-lg p-4 rounded-lg w-full text-center"><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/blogs/">Blogs</a></li>
 				<li class="bg-white shadow-lg p-4 rounded-lg w-full text-center"><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/comics/">Comic Strips</a></li>
+				<li class="bg-white shadow-lg p-4 rounded-lg w-full text-center"><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/leaderboard/">Leaderboard</a></li>
 			</ul>
 		</div>
 	</div>
