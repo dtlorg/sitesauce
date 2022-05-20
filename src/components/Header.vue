@@ -8,6 +8,7 @@
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/gallery/">Projects</a></li>
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/blogs/">Blogs</a></li>
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/comics/">Comic Strips</a></li>
+			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/leaderboard/">Leaderboard</a></li>
 		</ul>
 	</header>
 	<div class="fixed z-50 bottom-4 self-center flex items-center justify-center gap-4 lg:hidden bg-white p-4 rounded-full shadow-xl" @click="overflow = true">

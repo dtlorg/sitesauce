@@ -47,15 +47,18 @@ defineProps({
 		</div>
 
 		<!-- Desc-->
-		<div class="p-10 bg-black/5 rounded-xl">
+		<div class="my-8">
 			<h1 class="font-bold">Description:</h1>
 			<h1 class="mt-6">{{ pdesc  }}</h1>
 		</div>
 
 		<!-- Comments -->
-		<div class="h-52 p-8 bg-black/5 rounded-xl">
+		<div>
 			<h1 class="font-bold">Post a comment</h1>
-			<span>// TODO</span>
+			<div class="h-52 my-6">
+				<textarea class="bg-black/5 rounded-xl p-4 w-full focus:outline-none" name="" rows="5" />
+				<button class="mt-4 bg-slate-900 hover:bg-slate-700 focus:outline-none text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto">Submit</button>
+			</div>
 		</div>
 	</div>
 </template>

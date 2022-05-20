@@ -12,6 +12,7 @@ export default defineConfig({
 				gallery: resolve(__dirname, 'gallery/index.html'),
 				blogs: resolve(__dirname, 'blogs/index.html'),
 				comics: resolve(__dirname, 'comics/index.html'),
+				leaderboard: resolve(__dirname, 'leaderboard/index.html')
 			}
 		}
 	}
