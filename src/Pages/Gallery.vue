@@ -7,7 +7,8 @@ defineProps({
 	pteam: String,
 	pdesc: String,
 	pmentor: String,
-	plink: String
+	plink: String,
+	pimg: String
 })
 </script>
 
@@ -51,17 +52,19 @@ defineProps({
 						<div
 							v-for="i in filteredPrs"
 							:key="i"
-							class="flex justify-start items-end bg-black/5 h-64 rounded-xl hover:scale-90 transition-transform cursor-pointer"
+							class="flex h-64 rounded-xl hover:scale-90 transition-transform cursor-pointer"
+							:style="{backgroundImage: 'url('+ i.img +')', backgroundSize: 'cover', backgroundColor: 'rgba(255, 0, 0, 0.5)',backgroundPosition: 'center'}"
 							@click="openURL(i.website)"
 							@mouseenter="proj = true,
 							pproject = i.project,
 								pteam = i.team,
 								plink = i.website,
 								pmentor = i.mentor,
-								pdesc = i.desc">
-							<div class="flex flex-col gap-2">
-								<span class="ml-6 w-52 overflow-hidden font-bold">{{ i.project }}</span>
-								<span class="ml-6 mb-6 w-52 overflow-hidden">{{ i.team }}</span>
+								pdesc = i.desc,
+								pimg = i.img">
+							<div class="self-end bottom-0 flex flex-col w-full py-2 m-4 bg-white rounded-lg shadow-lg">
+								<span class="ml-6 w-52 overflow-hidden font-bold text-sm">{{ i.project }}</span>
+								<span class="ml-6 w-52 overflow-hidden text-sm">{{ i.team }}</span>
 							</div>
 						</div>
 				</div>
@@ -84,7 +87,7 @@ defineProps({
 				</span>
 				<div class="flex my-8">
 					<div class="flex flex-col gap-4 w-full">
-						<div class="bg-black/10 w-full h-32 rounded-xl"></div>
+						<img :src="pimg" class="w-full rounded-xl">
 						<div>
 							<h1 class="text-base w-64 lg:w-auto overflow-hidden"><span class="font-bold">{{ pproject }}</span><br>{{ pteam }}</h1>
 							<h2 class="text-s">Mentor: {{ pmentor }}</h2>
@@ -119,11 +122,6 @@ export default {
 	data: () => ({
 		project: false,
 		prs: null,
-		pproject: '',
-		ptean: '',
-		plink: '',
-		pmentor: '',
-		pdesc: '',
 		search: "",
 		proj: false
 	}),

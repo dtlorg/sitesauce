@@ -33,11 +33,11 @@ import BlogPage from '../components/BlogPage.vue';
 </template>
 
 <script>
-// export default {
-// 	data: () => ({
-// 		tblog: false
-// 	})
-// }
+export default {
+	data: () => ({
+		tblog: false
+	})
+}
 </script>
 
 <style>

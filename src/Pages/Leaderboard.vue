@@ -38,7 +38,7 @@ import axios from 'axios';
 					<li><h1 class="overflow-clip">{{ i.project }}</h1></li>
 					<li><h1 class="overflow-clip">{{ i.team }}</h1></li>
 					<li><h1 class="overflow-clip">{{ i.mentor }}</h1></li>
-					<li class="place-self-center"><h1 class="overflow-clip">-</h1></li>
+					<li class="place-self-center"><h1 class="overflow-clip">{{ i.Grade }}</h1></li>
 				</ul>
 			</div>
 		</div>

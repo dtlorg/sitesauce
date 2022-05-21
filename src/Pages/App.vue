@@ -16,13 +16,12 @@ import ProjectPage from '../components/ProjectPage.vue';
 
 		<div class="flex flex-col gap-12 mx-6 lg:mx-60 my-8">
 			<carousel :items-to-show="1" :autoplay="3000" :transition="600" :wrap-around="true" class="bg-black/5 rounded-xl">
-				<slide v-for="slide in prs" :key="slide">
-					<div class="flex justify-center items-end h-64 rounded-xl hover:scale-90 transition-transform cursor-pointer"
-						@click="openURL(slide.website)">
+				<slide v-for="slide in rands" :key="slide.team">
+					<div class="flex justify-center items-end h-64 cursor-pointer">
 						<div class="flex flex-col gap-2">
-								<span class="ml-6 w-52 overflow-hidden font-bold">{{ slide.project }}</span>
-								<span class="ml-6 mb-6 w-52 overflow-hidden">{{ slide.team }}</span>
-							</div>
+							<span class="ml-6 w-52 font-bold">{{ slide.project }}</span>
+							<span class="ml-6 mb-6 w-52">{{ slide.team }}</span>
+						</div>
 					</div>
 				</slide>
 
@@ -45,17 +44,19 @@ import ProjectPage from '../components/ProjectPage.vue';
 					<div
 						v-for="i in prs"
 						:key="i"
-						class="flex justify-start items-end bg-black/5 h-64 rounded-xl hover:scale-90 transition-transform cursor-pointer"
+						class="flex h-64 rounded-xl hover:scale-90 transition-transform cursor-pointer"
+							:style="{backgroundImage: 'url('+ i.img +')', backgroundSize: 'cover', backgroundColor: 'rgba(255, 0, 0, 0.5)',backgroundPosition: 'center'}"
 						@click="openURL(i.website)"
 							@mouseenter="proj = true,
 							pproject = i.project,
 								pteam = i.team,
 								plink = i.website,
 								pmentor = i.mentor,
-								pdesc = i.desc">
-						<div class="flex flex-col gap-2">
-								<span class="ml-6 w-52 overflow-hidden font-bold">{{ i.project }}</span>
-								<span class="ml-6 mb-6 w-52 overflow-hidden">{{ i.team }}</span>
+								pdesc = i.desc,
+								pimg = i.img">
+							<div class="self-end bottom-0 flex flex-col w-full py-2 m-4 bg-white rounded-lg shadow-lg">
+								<span class="ml-6 w-52 overflow-hidden font-bold text-sm">{{ i.project }}</span>
+								<span class="ml-6 w-52 overflow-hidden text-sm">{{ i.team }}</span>
 							</div>
 					</div>
 				</div>
@@ -77,7 +78,7 @@ import ProjectPage from '../components/ProjectPage.vue';
 				</span>
 				<div class="flex my-8">
 					<div class="flex flex-col gap-4 w-full">
-						<div class="bg-black/10 w-full h-32 rounded-xl"></div>
+						<img :src="pimg" class="w-full rounded-xl">
 						<div>
 							<h1 class="text-base w-64 lg:w-auto overflow-hidden"><span class="font-bold">{{ pproject }}</span><br>{{ pteam }}</h1>
 							<h2 class="text-s">Mentor: {{ pmentor }}</h2>
@@ -152,11 +153,13 @@ export default {
 		tblog: false,
 		project: false,
 		prs: [],
+		rands: [],
 		pproject: '',
 		ptean: '',
 		plink: '',
 		pmentor: '',
 		pdesc: '',
+		pimg: '',
 		proj: false
 	}),
 	components: {
@@ -179,6 +182,8 @@ export default {
 					this.prs[s] = t[s]
 				}
 			})
+
+			this.rands = this.prs
 	}
 };
 </script>
