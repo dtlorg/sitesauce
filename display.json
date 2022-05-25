@@ -1,0 +1,35 @@
+[
+  {
+    "email": "sarathchandra20uari137@mahindrauniversity.edu.in",
+    "name": "Sarathchandra Lingareddy",
+    "team": "Infinity assassins",
+    "mentor": "Ani Thomas",
+    "website": "https://sites.google.com/view/organdonationproject/home",
+    "project": "Organ Donation",
+    "desc": "Organ donation takes healthy organs and tissues from one person for transplantation into another. Experts say that the organs from one donor can save or help as many as 50 people. Organs you can donate include:  Internal organs: Kidneys, heart, liver, pancreas, intestines, lungs Skin Bone and bone marrow Cornea Most organ and tissue donations occur after the donor has died. But some organs and tissues can be donated while the donor is alive.  People of all ages and background can be organ donors. If you are under age 18, your parent or guardian must give you permission to become a donor. If you are 18 or older you can show you want to be a donor by signing a donor card. You should also let your family know your wishes.",
+    "Grade": 3,
+    "img": "https://raw.githubusercontent.com/rekhithasree/dtl-images/main/Infinity%20assassins.png"
+  },
+  {
+    "email": "syed20umee044@mahindrauniversity.edu.in",
+    "name": "Syed Awais",
+    "team": "TIME ATTORNEYS",
+    "mentor": "Raj Narayanan",
+    "website": "https://sites.google.com/view/time-attorneys/home?authuser=0",
+    "project": "EDUCATION ",
+    "desc": "Our project is based up on the education system . The problems faced in the education system and we find the solutions for it. This project is a very important initiative towards the betterment of society as the problem which we have chosen is a very common problem faced by almost everyone. We even did a on ground data collection and we encountered the same results as expected. Our project is on its way to create a big impact to all the students mainly in India. This is a short project description of our team Time Attorneys . You can further explore our website for more info.",
+    "Grade": 3,
+    "img": "https://raw.githubusercontent.com/rekhithasree/dtl-images/main/TIME_ATTORNEYS.png"
+  },
+    {
+      "email": "rohit20ucse147@mahindrauniversity.edu.in",
+      "name": "Rohit Javvadi",
+      "team": "Team Arrow ",
+      "mentor": "Abhinav Chaturvedi",
+      "website": "https://sites.google.com/view/team-arrow1/home",
+      "project": "Difficulties faced by Students in Libraries",
+      "desc": "Our main mission is to find all the problems students are facing in the library and so we set out to find all the problems which our fellow mates are facing ,so we interviewed the students who frequently visit the library and based on their inputs and feedback we tried to connect all the dots and find out all the reason behind the problems which the students are facing and based in those we had also taken the input of the librarians for their POV and based on their collective responses we are trying to come up with a optimal solution",
+      "Grade": 4,
+      "img": "https://raw.githubusercontent.com/rekhithasree/dtl-images/main/Team%20Arrow.png"
+    }
+]
