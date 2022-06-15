@@ -5,8 +5,8 @@ import BlogPage from '../components/BlogPage.vue';
 
 <template>
 	<BlogPage v-if="tblog"/>
-	<div v-else>
-		<header class="flex justify-between items-center px-8 py-5 z-40 sticky -top-0 border-white border-b-2 backdrop-filter backdrop-blur">
+	<div class="dark:bg-slate-900 dark:text-white" v-else>
+		<header class="flex justify-between items-center px-8 py-5 z-40 sticky -top-0 bg-slate-200/20 dark:bg-slate-800/20 dark:text-white backdrop-filter backdrop-blur">
 			<a href="/" class="font-bold flex gap-4">
 				<!-- <img src="../assets/enigma.svg" class="lg:w-auto w-6 select-none" /> -->
 				<span>
@@ -16,21 +16,21 @@ import BlogPage from '../components/BlogPage.vue';
 						viewBox="0 0 24 24" fill="none"
 						xmlns="http://www.w3.org/2000/svg"
 						class="hover:scale-90 transition ease-in-out duration-300 cursor-pointer">
-						<path d="M21 11H6.83L10.41 7.41L9 6L3 12L9 18L10.41 16.58L6.83 13H21V11Z" fill="black"/>
+						<path d="M21 11H6.83L10.41 7.41L9 6L3 12L9 18L10.41 16.58L6.83 13H21V11Z" fill="skyblue"/>
 					</svg>
 				</span>
 				BLOGS
 			</a>
 		</header>
 
-		<div class="flex flex-col gap-12 m-6 lg:mx-60 lg:my-8">
+		<div class="flex flex-col gap-12 m-6 lg:mx-60 lg:my-8 dark:text-white">
 			<h1 class="text-xl font-bold">Blogs</h1>
 
 			<div class="grid grid-cols-1 lg:grid-cols-3 auto-rows-auto gap-6">
 				<div v-for="i in 9" :key="i">
 					<div class="flex flex-col justify-between bg-black/5 h-64 rounded-xl">
 						<div class="bg-black/10 p-6 rounded-t-xl">
-							Date {{ i }}
+							Title
 						</div>
 						<div class="p-6">
 							<button

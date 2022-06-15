@@ -11,15 +11,15 @@ import ProjectPage from '../components/ProjectPage.vue';
 <template>
 	<ProjectPage v-if="project" :pproject="pproject" :pteam="pteam" :plink="plink" :pmentor="pmentor" :pdesc="pdesc" />
 	<BlogPage v-else-if="tblog" />
-	<div class="flex flex-col" v-else>
+	<div class="flex flex-col dark:bg-slate-900 dark:text-white" v-else>
 		<Header />
 
-		<div class="flex flex-col gap-12 mx-6 lg:mx-60 my-8">
-			<section class="bg-black/5 rounded-xl justify-around h-64 w-card overflow-hidden">
+		<div class="flex flex-col gap-16 mx-6 lg:mx-60 my-8">
+			<section class="bg-black/5 rounded-xl shadow-lg justify-around h-64 w-card overflow-hidden">
 				<div v-dragscroll.x class="overflow-x-scroll whitespace-nowrap box-border cursor-grab">
-					<div v-for="i in prs" :key="i" class="inline-flex h-64 w-card"
-						:style="{ backgroundImage: 'url(' + i.img + ')', backgroundSize: 'cover', backgroundColor: 'rgba(255, 0, 0, 0.5)', backgroundPosition: 'center' }">
-						<div class="self-end flex flex-col p-2 m-4 bg-white rounded-lg shadow-lg">
+					<div v-for="i in chosenOnes" :key="i" class="inline-flex h-64 w-card"
+						:style="{ backgroundImage: 'url(' + i.img + ')', backgroundSize: 'cover', backgroundColor: 'rgba(255, 100, 100, 0.5)', backgroundPosition: 'center' }">
+						<div class="self-end flex flex-col p-2 m-4 bg-white dark:bg-slate-800 rounded-lg shadow-lg">
 							<span class="mx-4 overflow-hidden font-bold text-xs lg:text-sm">{{ i.project }}</span>
 							<span class="mx-4 overflow-hidden text-xs lg:text-sm">{{ i.team }}</span>
 						</div>
@@ -27,11 +27,11 @@ import ProjectPage from '../components/ProjectPage.vue';
 				</div>
 			</section>
 
-			<h1 class="self-center text-black/40"> &lt;&lt; Scroll for more &gt;&gt; </h1>
+			<h1 class="self-center text-black/40 dark:text-white/40"> &lt;&lt; Scroll for more &gt;&gt; </h1>
 
 			<div>
-				<h1 class="text-4xl font-bold">Design Thinking</h1>
-				<h2 class="text-2xl">The course website landing page</h2>
+				<h1 class="text-4xl font-bold text-blue-500"><span class="">Design</span> Thinking</h1>
+				<h2 class="text-2xl">A collection of projects by all the teams in the Design thinking course.</h2>
 			</div>
 
 			<div class="flex flex-col gap-6">
@@ -41,7 +41,7 @@ import ProjectPage from '../components/ProjectPage.vue';
 					</h1>
 				</div>
 				<div class="grid grid-cols-2 lg:grid-cols-3 auto-rows-auto gap-6">
-					<div v-for="i in prs" :key="i" class="flex h-64 rounded-xl hover:scale-90 transition-transform cursor-pointer"
+					<div v-for="i in chosenOnes" :key="i" class="flex h-64 rounded-xl hover:scale-90 transition-transform cursor-pointer"
 						:style="{ backgroundImage: 'url(' + i.img + ')', backgroundSize: 'cover', backgroundColor: 'rgba(255, 0, 0, 0.5)', backgroundPosition: 'center' }"
 						@click="openURL(i.website)" @mouseenter="proj = true,
 						pproject = i.project,
@@ -50,7 +50,7 @@ import ProjectPage from '../components/ProjectPage.vue';
 						pmentor = i.mentor,
 						pdesc = i.desc,
 						pimg = i.img">
-						<div class="self-end bottom-0 flex flex-col w-full py-2 m-4 bg-white rounded-lg shadow-lg">
+						<div class="self-end bottom-0 flex flex-col w-full py-2 m-4 bg-white dark:bg-slate-800 rounded-lg shadow-lg">
 							<span class="ml-6 overflow-hidden font-bold text-xs lg:text-sm">{{ i.project }}</span>
 							<span class="ml-6 overflow-hidden text-xs lg:text-sm">{{ i.team }}</span>
 						</div>
@@ -59,14 +59,13 @@ import ProjectPage from '../components/ProjectPage.vue';
 			</div>
 
 			<transition name="fade">
-				<div class="fixed right-0 top-0 z-50 flex h-screen w-screen lg:w-96 overflow-y-scroll rounded-xl" v-if="proj"
-					style="background-color: #F2F2F2;" :class="{ 'fade-enter-active': proj }">
+				<div class="fixed right-0 top-0 z-50 flex h-screen w-screen lg:w-96 overflow-y-scroll rounded-xl bg-white dark:bg-slate-800" v-if="proj" :class="{ 'fade-enter-active': proj }">
 					<div class="flex flex-col mx-6 my-6 min-h-screen">
 						<!-- Team info -->
 						<span class="font-bold flex gap-4" @click="proj = !proj">
 							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
 								class="hover:scale-90 transition ease-in-out duration-300 cursor-pointer">
-								<path d="M21 11H6.83L10.41 7.41L9 6L3 12L9 18L10.41 16.58L6.83 13H21V11Z" fill="black" />
+								<path d="M21 11H6.83L10.41 7.41L9 6L3 12L9 18L10.41 16.58L6.83 13H21V11Z" fill="blue" />
 							</svg>
 						</span>
 						<div class="flex my-8">
@@ -110,9 +109,9 @@ import ProjectPage from '../components/ProjectPage.vue';
 				</div>
 				<div class="grid grid-cols-2 lg:grid-cols-3 auto-rows-auto gap-6">
 					<div v-for="i in 3" :key="i">
-						<div class="flex flex-col justify-between bg-black/5 h-64 rounded-xl">
-							<div class="bg-black/10 p-6 rounded-t-xl">
-								Date {{ i }}
+						<div class="flex flex-col justify-between bg-black/5 bg-slate-800 h-64 rounded-xl">
+							<div class="bg-black/10 dark:bg-slate-900/30 p-6 rounded-t-xl">
+								Blog Title
 							</div>
 							<div class="p-6">
 								<button type="button"
@@ -132,7 +131,7 @@ import ProjectPage from '../components/ProjectPage.vue';
 					<h1 class="text-blue-600 hover:underline transition ease-in-out duration-300"><a href="/comics/">See all</a>
 					</h1>
 				</div>
-				<div class="w-full h-52 bg-black/10 rounded-xl">
+				<div class="w-full h-52 bg-black/10 dark:bg-slate-800 rounded-xl">
 				</div>
 			</div>
 		</div>
@@ -167,6 +166,14 @@ export default {
 			.then((res) => {
 				this.prs = res.data
 			})
+	},
+	computed: {
+		chosenOnes: function() {
+			var base = this.prs
+			var chosen = base
+
+			return chosen
+		}
 	}
 }
 </script>

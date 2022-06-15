@@ -4,7 +4,8 @@ import BlogPage from '../components/BlogPage.vue';
 </script>
 
 <template>
-	<header class="flex justify-between items-center px-8 py-5 z-40 sticky -top-0 border-white border-b-2" :class="{'backdrop-filter backdrop-blur': !overflow, 'fixed w-screen': overflow}">
+	<div class="dark:bg-slate-900 dark:text-white">
+		<header class="flex justify-between items-center px-8 py-5 z-40 sticky -top-0 bg-slate-200/20 dark:bg-slate-800/20 dark:text-white" :class="{'backdrop-filter backdrop-blur': !overflow, 'fixed w-screen': overflow}">
 		<a href="/" class="font-bold flex gap-4">
 			<!-- <img src="../assets/enigma.svg" class="lg:w-auto w-6 select-none" /> -->
 			<span>
@@ -14,7 +15,7 @@ import BlogPage from '../components/BlogPage.vue';
 					viewBox="0 0 24 24" fill="none"
 					xmlns="http://www.w3.org/2000/svg"
 					class="hover:scale-90 transition ease-in-out duration-300 cursor-pointer">
-					<path d="M21 11H6.83L10.41 7.41L9 6L3 12L9 18L10.41 16.58L6.83 13H21V11Z" fill="black"/>
+					<path d="M21 11H6.83L10.41 7.41L9 6L3 12L9 18L10.41 16.58L6.83 13H21V11Z" fill="skyblue"/>
 				</svg>
 			</span>
 			COMICS
@@ -25,8 +26,9 @@ import BlogPage from '../components/BlogPage.vue';
 		<h1 class="text-xl font-bold">Comic strips</h1>
 
 			<div v-for="i in 9" :key="i">
-				<div class="w-full h-52 bg-black/10 rounded-xl"></div>
+				<div class="w-full h-52 bg-black/10 dark:bg-slate-800 rounded-xl"></div>
 			</div>
+	</div>
 	</div>
 
 	<Footer/>

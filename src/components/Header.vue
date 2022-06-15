@@ -1,14 +1,14 @@
 <template>
-	<header class="flex justify-between items-center px-8 py-5 z-40 sticky -top-0 border-white border-b-2" :class="{'backdrop-filter backdrop-blur': !overflow, 'fixed w-screen': overflow}">
+	<header class="flex justify-between bg-slate-200/20 dark:bg-slate-800/20 dark:text-white items-center px-8 py-5 z-40 sticky -top-0" :class="{'backdrop-filter backdrop-blur': !overflow, 'fixed w-screen': overflow}">
 		<a href="/" class="font-bold">
 			<!-- <img src="../assets/enigma.svg" class="lg:w-auto w-6 select-none" /> -->
 			CREATIVE SCIENCES.
 		</a>
 		<ul class="lg:flex hidden gap-6">
-			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/gallery/">Projects</a></li>
-			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/blogs/">Blogs</a></li>
-			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/comics/">Comic Strips</a></li>
-			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" href="/leaderboard/">Leaderboard</a></li>
+			<li><a class="hover:text-blue-500 transition ease-in-out duration-300 cursor-pointer" href="/gallery/">Projects</a></li>
+			<li><a class="hover:text-blue-500 transition ease-in-out duration-300 cursor-pointer" href="/blogs/">Blogs</a></li>
+			<li><a class="hover:text-blue-500 transition ease-in-out duration-300 cursor-pointer" href="/comics/">Comic Strips</a></li>
+			<li><a class="hover:text-blue-500 transition ease-in-out duration-300 cursor-pointer" href="/leaderboard/">Leaderboard</a></li>
 		</ul>
 	</header>
 	<div class="fixed z-50 bottom-4 self-center flex items-center justify-center gap-4 lg:hidden bg-white p-4 rounded-full shadow-xl" @click="overflow = true">
