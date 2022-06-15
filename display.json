@@ -22,13 +22,14 @@
 		"img": "https://raw.githubusercontent.com/rekhithasree/dtl-images/main/TIME_ATTORNEYS.png"
 	},
 	 {
-		"email": "himavanth20uari064@mahindrauniversity.edu.in",
-		"name": "Himavanth Kandula",
-		"team": "Amnesia",
-		"mentor": "Raj Narayanan",
-		"website": "https://sites.google.com/view/smart-university/home",
-		"project": "Smart University",
-		"desc": "In our cars, stores, banks, and homes, smart technologies are already a part of our daily lives. On a daily basis, we come into contact with intelligent settings. Despite this, many universities continue to maintain siloed infrastructures that don't serve or connect with anyone other than their connected stakeholders. There are a number of software platforms and enormous ERP/SIS systems that do not communicate with one another. Consider a different type of infrastructure: one that intelligently communicated to assure positive results in every encounter and event. Our goal is to use technology wherever possible and make tasks done by the colleges/universities easier, smarter and much more faster.",
-		"Grade": 4
+		"email": "satyanarayana20uari158@mahindrauniversity.edu.in",
+		"name": "Satyanarayana Namburi VV",
+		"team": "Team Delegants",
+		"mentor": "Sayoni Laha",
+		"website": "https://sites.google.com/view/teamdelegants/home",
+		"project": "Career Guidance",
+		"desc": "We team Delegants are working on topic Career Guidance which helps people to find a better path to pursue their career in their interested field. We chose this as our problem statement because many of us know only a few courses such as engineering, medical etc but there are many other fields that many people don't know. So, we here are helping people find a proper CAREER GUIDANCE. Now we are figuring out solutions for these problems that came up when we are surveyed people about why they got deviated from their goals/ambitions. We as a team are trying to solve these issues and help students to find the suitable career and achieve their goals.",
+		"Grade": 2,
+		"img": "https://raw.githubusercontent.com/Mentor2108/Screenshots_DTL/main/Team%20Delegants.jpg"
 	}
 ]
